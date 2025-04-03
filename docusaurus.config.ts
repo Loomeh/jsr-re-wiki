@@ -38,17 +38,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/Loomeh/jsr-re-wiki/edit/main/'
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -88,21 +80,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Jet Set Radio Modding Discord',
-              href: 'https://discord.gg/2CMHxS6NP2',
-            },
-            {
-              label: 'JSRF Reverse Engineering Discord',
-              href: 'https://discord.gg/Gumwtfgghm',
-            },
-          ],
-        },
-      ],
       copyright: `This project nor its contributors are associated with SEGA or Microsoft in any way. All trademarks belong to their respective owners.`,
     },
     prism: {
