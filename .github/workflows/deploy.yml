@@ -24,6 +24,8 @@ jobs:
             ~/.bun/install/cache
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
 
+      - name: Install Bun
+        run: curl -fsSL https://bun.sh/install | bash
       - name: Install dependencies
         run: bun install --frozen-lockfile
       - name: Build website
