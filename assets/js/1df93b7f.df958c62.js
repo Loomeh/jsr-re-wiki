@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjsr_re_wiki=self.webpackChunkjsr_re_wiki||[]).push([[583],{6107:(r,e,i)=>{i.r(e),i.d(e,{default:()=>u});i(6540);var s=i(6347),t=i(4848);function u(){return(0,t.jsx)(s.rd,{to:"https://loomeh.github.io/jsr-re-wiki/docs/intro"})}}}]);
