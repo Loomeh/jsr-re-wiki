@@ -1,0 +1,57 @@
+import ReactAudioPlayer from 'react-audio-player';
+
+# Music
+
+## File Information
+
+- **Directory:** `CUSTOM/`
+- **File Extensions:** `.ARC`, `.ogg`
+
+In both versions of *Jet Set Radio*, the game's music files are stored in ARC archive files.
+
+---
+
+## Track Segmentation
+
+Song files are split into multiple segments, which the game engine pieces back together. This allows DJ Professor K's track transitions to function smoothly.
+
+### Demo
+
+Here's an example of JSR's track segmentation in effect using **Super Brothers** by *Guitar Vader*:
+
+#### **1. Intro Segment**
+The first part of the intro is stored separately. In JSR, the full intro is typically only heard when the level starts with this song.
+<ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUPER_F1.OGG" controls />  
+
+#### **2. First Verse**
+For other songs transitioning into this one, this is the file the transition cuts to.
+<ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUPER_F2.OGG" controls />  
+
+#### **3. Mid-Song Segment**
+The next part of the song plays up until the bridge.
+<ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUPER_M1.OGG" controls />  
+
+#### **4. Bridge**
+<ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUPER_M2.OGG" controls />  
+
+#### **5. Final Segment**
+<ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUPER_M3.OGG" controls />  
+
+#### **6. Loop or Transition**
+- **If the song loops**, it loads this file:
+  <ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUPER_R.OGG" controls />  
+
+- **If transitioning to another song**, it loads the transition file for that song:
+  <ReactAudioPlayer src="https://github.com/Loomeh/jsr-re-wiki/raw/refs/heads/main/audio/SUP_ROC1.OGG" controls />  
+
+---
+
+## File Formatting
+
+### **Dreamcast Version**
+> *Insert details about the Dreamcast audio files here.*
+
+### **HD Version**
+In *Jet Set Radio HD*, music files are stored in the **Opus** (`.ogg`) format. Players can replace in-game tracks by placing custom `.ogg` files named identically to the archived ones inside the `CUSTOM` directory.
+
+This feature appears to be an **unintended oversight** by Blit.
