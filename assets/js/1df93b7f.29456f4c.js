@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjsr_re_wiki=self.webpackChunkjsr_re_wiki||[]).push([[583],{6107:(r,e,s)=>{s.r(e),s.d(e,{default:()=>t});s(6540);var i=s(6347),k=s(4848);function t(){return(0,k.jsx)(i.rd,{to:"/jsr-re-wiki/docs/intro"})}}}]);
