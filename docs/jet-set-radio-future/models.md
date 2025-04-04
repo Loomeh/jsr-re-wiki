@@ -1,7 +1,6 @@
 # 3D Models
 
 ### File Information
-- **Directories:** `Media/Stage/`, `Media/Player/`
 - **File Extensions:** `.dat`
 
 ---
